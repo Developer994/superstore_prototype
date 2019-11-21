@@ -5,12 +5,12 @@
 }
 
 nav{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
     background-color: rgb(41, 241, 41);
+    display: flex;
     font-family: 'Poppins', sans-serif;
+    justify-content: space-around;
+    min-height: 8vh;
 }
 
 .logo{
@@ -57,36 +57,45 @@ nav{
     transition: all 0.3s ease;
 }
 
-#contentContainer{
-    /* background: yellow; */
+.mainTitle{
+}
+
+
+.jumbotron{
     background-image: url(assets/images/fruits&vegetables.jpg);
-    background-repeat: no-repeat;
-    background-size: 1100px 400px;
-    align-content: center;
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
-    width: 1100px;
-    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid grey;
+    height:60vh;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
-} 
-
-.textContainer h1{
-    width: 1000px;
-    padding-left: 350px;
-    padding-top: 150px;
+    margin-top: 10px;
+    position: relative;
+    width: 85%;
 }
 
-.textContainer h4{
-    padding-left: 400px;
-    padding-top: 20px;
+.heading-primary{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary--main{
+    color: white;
+    display: block;
+    font-size: 2.0rem;
+    text-shadow: 2px 2px black;
+}
+
+.heading-primary--sub{
+    display: block;
+    font-size: 1rem;
+    padding-top: 1rem;
 }
 
 
-@media screen and (max-width:1195px) {
+/* @media screen and (max-width:1195px) {
     
 .nav-links{
     display: flex;
@@ -94,49 +103,50 @@ nav{
     width: 60%;
     }
 
-#contentContainer{
-   
+.textContainer{ 
     background-image: url(assets/images/fruits&vegetables.jpg);
     background-repeat: no-repeat;
-    background-size: 1100px 400px;
-    align-content: center;
+    background-size: 50rem 25rem;
+    align-content: row;
     display: flex;
     border-style: solid;
     border-width: 1px;
     border-color: lightgray;
-    width: 800px;
-    height: 400px;
+    width: 50rem;
+    height: 25rem;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 100px;
 } 
 
+
 .textContainer h1{
-    width: 800px;
-    padding-left: 220px;
-    padding-top: 150px;
+    font-size: x-large;
+    width: 50rem;
+    padding-left: 22rem;
+    padding-top: 7rem;
 }
 
 .textContainer h4{
-    padding-left: 250px;
-    padding-top: 20px;
-}
-}
+    font-size: small;
+    padding-left: 23.5rem;
+    padding-top: 1rem;
+}   
+
+
+} */
 
 @media screen and (max-width:850px) {
-body{
-    overflow-x: hidden;
-}
-
 .nav-links{
     position: absolute;
-    height: 92vh;
+    margin-top: 50px;
+    height: 50vh;
     top: 0px;
     background-color: rgb(41, 241, 41);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    width: 100%;
     transform: translateY(-100%);
     transition: transform 0.5s ease-in;
 }
@@ -147,36 +157,6 @@ body{
 
 .burger{
     display: block;
-}
-
-#contentContainer{
-    background-image: url(assets/images/fruits&vegetables.jpg);
-    background-repeat: no-repeat;
-    background-size: 750px 400px;
-    align-content: center;
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
-    width: 85%;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
-} 
-
-.textContainer h1{
-    text-align: center;
-    width: 85%;
-    padding-left: 220px;
-    padding-top: 150px;
-}
-
-.textContainer h4{
-    padding-left: 220px;
-    padding-top: 20px;
-}
-
 }
 
 .nav-active{
@@ -207,39 +187,95 @@ body{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
+/* 
 @media screen and (max-width:600px) {
     
-#contentContainer{
+.textContainer{
     background-image: url(assets/images/fruits&vegetables.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 300px;
+    background-size: 100% 20rem;
     align-content: center;
     display: flex;
     border-style: solid;
     border-width: 1px;
     border-color: lightgray;
-    width: 85%;
-    height: 300px;
+    width: 100%;
+    height: 20rem;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 100px;
 } 
 
-.textContainer h1{
+.textContainer{
+    width: 100%;
     text-align: center;
-    font-size: 20px;
-    /* width: 70%; */
-    padding-left: 180px;
-    padding-top: 100px;
+    padding-top: 2rem;
+    padding-left: 1rem;
 }
 
-.textContainer h4{
-    font-size: small;
-    text-align: center;
-    width: 85%;
-    padding-left: 170px;
-    /* padding-top: 20px; */
-}
+} */
 
-}
+/* @media screen and (max-width:450px) {
+    .textContainer h1{
+        text-align: center;
+        font-size: 20px;
+        padding-left: 7rem;
+        padding-top: 7rem;
+    }
+    
+    .textContainer h4{
+        font-size: small;
+        text-align: center;
+        width: 85%;
+        padding-left: 7rem;
+       
+    }
+} */
+
+/* @media screen and (max-width:420px), (min-width:320px) {
+    .textContainer{
+        background-image: url(assets/images/fruits&vegetables.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 300px;
+        align-content: center;
+        display: flex;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgray;
+        width: 85%;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    } 
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        background-color: rgb(41, 241, 41);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-active{
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .textContainer h1{
+        text-align: center;
+        font-size: 1rem;
+        width: 80%;
+        padding-left: 4rem;
+        padding-top: 6rem;
+    }
+    
+    .textContainer h4{
+        font-size: small;
+        text-align: center;
+        width: 80%;
+        padding-left: 4rem;
+        padding-top: 20px;
+    } */
+} 
