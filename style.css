@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.logo{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
 nav{
     align-items: center;
     background-color: rgb(41, 241, 41);
@@ -14,23 +23,10 @@ nav{
     position: relative;
 }
 
-.logo{
-    color: white;
-    font-size: 20px;
-    letter-spacing: 5px;
-    position: relative;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 40%;
-}
-
-.nav-links li{
-    list-style: none;
 }
 
 .nav-links a{
@@ -45,18 +41,21 @@ nav{
    color: yellow;
 }
 
+.nav-links li{
+    list-style: none;
+}
+
 .burger{
     display: none;
     cursor: pointer;
-    z-index: 2;
 }
 
 .burger div{
-    width: 25px;
-    height: 3px;
     background-color: black;
+    height: 3px;
     margin: 5px;
     transition: all 0.3s ease;
+    width: 25px;
 }
 
 .mainTitle{
@@ -76,10 +75,9 @@ nav{
 }
 
 .heading-primary{
-    text-align: center;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -87,6 +85,7 @@ nav{
     color: white;
     display: block;
     font-size: 2.0rem;
+    text-align: center;
     text-shadow: 2px 2px black;
 }
 
@@ -94,6 +93,7 @@ nav{
     display: block;
     font-size: 1rem;
     padding-top: 1rem;
+    text-align: center;
 }
 
 
@@ -119,6 +119,10 @@ nav{
     z-index: 2;
 }
 
+.nav-active{
+    transform: translateX(0%);
+}
+
 .nav-links{
     align-items: center;
     background-color: rgb(41, 241, 41);
@@ -137,11 +141,6 @@ nav{
 .nav-links li{
     opacity: 0;
 }
-
-.nav-active{
-    transform: translateX(0%);
-}
-
 
 @keyframes navLinkFade{
     from{
@@ -167,3 +166,23 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 }
+
+@media screen and (max-width:350px) {
+.heading-primary--main{
+    font-size: large;
+}
+
+.heading-primary--sub{
+    font-size: small;
+}
+}
+
+@media screen and (max-width:200px) {
+    .heading-primary--main{
+        font-size: small;
+    }
+    .heading-primary--sub{
+        font-size: 0.5rem;
+    }
+}
+
