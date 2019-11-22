@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-.logo{
-    color: white;
-    font-size: 20px;
-    letter-spacing: 5px;
-    position: relative;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
 nav{
     align-items: center;
     background-color: rgb(41, 241, 41);
@@ -23,10 +14,23 @@ nav{
     position: relative;
 }
 
+.logo{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
 }
 
 .nav-links a{
@@ -41,21 +45,18 @@ nav{
    color: yellow;
 }
 
-.nav-links li{
-    list-style: none;
-}
-
 .burger{
     display: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 .burger div{
-    background-color: black;
+    width: 25px;
     height: 3px;
+    background-color: black;
     margin: 5px;
     transition: all 0.3s ease;
-    width: 25px;
 }
 
 .mainTitle{
@@ -64,9 +65,9 @@ nav{
 
 .jumbotron{
     background-image: url(assets/images/fruits&vegetables.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
-    border: 1px solid grey;
+    border: 1px solid rgb(194, 190, 190);
     height:60vh;
     margin: 0 auto;
     margin-top: 10px;
@@ -119,10 +120,6 @@ nav{
     z-index: 2;
 }
 
-.nav-active{
-    transform: translateX(0%);
-}
-
 .nav-links{
     align-items: center;
     background-color: rgb(41, 241, 41);
@@ -141,6 +138,11 @@ nav{
 .nav-links li{
     opacity: 0;
 }
+
+.nav-active{
+    transform: translateX(0%);
+}
+
 
 @keyframes navLinkFade{
     from{
