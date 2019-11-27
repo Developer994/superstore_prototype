@@ -100,6 +100,8 @@ nav{
     font-size: 1rem;
     padding-top: 1rem;
     text-align: center;
+    color: white;
+    text-shadow: black 2px 2px;
 }
 
 
@@ -121,10 +123,10 @@ nav{
     display: block;
 }
 
-.heading-primary--sub{
+/* .heading-primary--sub{
    color: white;
    text-shadow: black 2px 2px;
-}
+} */
 
 .jumbotron{
     margin-top: 2rem;
@@ -212,3 +214,23 @@ nav{
     }
 }
 
+@media screen and (max-height:660px) {
+    .heading-primary--main{
+        font-size: medium;
+    }
+    
+    .heading-primary--sub{
+        font-size: small;
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-height:350px) {
+    .heading-primary--main{
+        font-size: xx-small;
+    }
+    
+    .heading-primary--sub{
+        font-size: xx-small;
+    }
+    }
