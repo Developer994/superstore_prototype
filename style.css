@@ -59,14 +59,15 @@ nav{
     transition: all 0.3s ease;
 }
 
-.mainTitle{
-}
+/* .mainTitle{
+} */
 
 
 .jumbotron{
-    background-image: url(assets/images/fruits&vegetables.jpg);
-    background-size: 100% 100%;
-    background-position: center;
+    /* background-image: url(assets/images/fruits&vegetables.jpg); */
+    background-color: yellow;
+    /* background-size: 100% 100%; */
+    /* background-position: center; */
     border: 1px solid rgb(194, 190, 190);
     height:60vh;
     margin: 0 auto;
