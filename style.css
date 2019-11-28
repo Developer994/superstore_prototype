@@ -68,12 +68,12 @@ nav{
 
 
 .jumbotron{
-    background-image: url(assets/images/fruits&vegetables.jpg);
+    background-image: linear-gradient(to right, rgba(69, 194, 11, 0.4), rgba(130, 238, 8, 0.84)), url(assets/images/fruits&vegetables.jpg);
     background-color: yellow;
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: top;
     border: 1px solid rgb(194, 190, 190);
-    height:40vh;
+    height:50vh;
     margin: 0 auto;
     margin-top: 10px;
     position: relative;
@@ -187,17 +187,17 @@ nav{
 
 @media screen and (max-width:450px) {
 .heading-primary--main{
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 .heading-primary--sub{
-    font-size: small;
+    font-size: 0.7rem;
 }
 }
 
 @media screen and (max-width:350px) {
     .heading-primary--main{
-        font-size: medium;
+        font-size: 1.5rem;
     }
     
     .heading-primary--sub{
@@ -214,23 +214,38 @@ nav{
     }
 }
 
+
 @media screen and (max-height:660px) {
+
+
     .heading-primary--main{
-        font-size: medium;
+        font-size: 1.2rem;
     }
     
     .heading-primary--sub{
-        font-size: small;
+        font-size: 0.5rem;
         padding-top: 0.5rem;
     }
 }
 
 @media screen and (max-height:350px) {
+
     .heading-primary--main{
-        font-size: xx-small;
+        font-size: 1.2rem;
     }
     
     .heading-primary--sub{
-        font-size: xx-small;
+        font-size: 0.8rem;
+    }
+    }
+
+@media screen and (max-height:200px) {
+
+    .heading-primary--main{
+        font-size: 1.5rem;
+    }
+    
+    .heading-primary--sub{
+        font-size: 0.7rem;
     }
     }
