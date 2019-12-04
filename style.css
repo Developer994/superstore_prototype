@@ -97,7 +97,7 @@ nav{
 
 .heading-primary--sub{
     display: block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 1rem;
     text-align: center;
     color: white;
@@ -112,21 +112,12 @@ nav{
     width: 50%;
     }
 
-.jumbotron{
-    height: 20vh;
-}
-
 }
 
 @media screen and (max-width:900px) {
 .burger{
     display: block;
 }
-
-/* .heading-primary--sub{
-   color: white;
-   text-shadow: black 2px 2px;
-} */
 
 .jumbotron{
     margin-top: 2rem;
@@ -219,33 +210,33 @@ nav{
 
 
     .heading-primary--main{
-        font-size: 1.2rem;
-    }
-    
-    .heading-primary--sub{
-        font-size: 0.5rem;
-        padding-top: 0.5rem;
-    }
-}
-
-@media screen and (max-height:350px) {
-
-    .heading-primary--main{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
     .heading-primary--sub{
         font-size: 0.8rem;
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-height:360px) {
+
+    .heading-primary--main{
+        font-size: 0.8rem;
+    }
+    
+    .heading-primary--sub{
+        font-size: 0.5rem;
     }
     }
 
 @media screen and (max-height:200px) {
 
     .heading-primary--main{
-        font-size: 1.5rem;
+        font-size: 0.6rem;
     }
     
     .heading-primary--sub{
-        font-size: 0.7rem;
+        font-size: 0.4rem;
     }
     }
