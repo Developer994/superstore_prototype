@@ -113,8 +113,9 @@ nav{
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: bolder;
     height: 55%;
+    padding-bottom: 5%;
     padding-top: 7%;
-    position: absolute;
+    position: relative;
     text-align: center;
     transform: translateY(3%) translateX(9%);
     width: 85%;
@@ -145,17 +146,19 @@ nav{
 }
 
 .box span{
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
     position: absolute;
     width: 100%;
-    left: 0;
-    bottom: 0;
-    padding: 10px 0;
 }
 
 .box:hover i{
     transform: translateY(-40px);
 }
 
+
+/* Media Queries */
 @media screen and (max-width:1080px) {
 
 .nav-links{
@@ -167,6 +170,22 @@ nav{
 }
 
 @media screen and (max-width:900px) {
+.box{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.boxContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+    padding-top: 4%;
+    width: 60%;
+}
+
 .burger{
     display: block;
 }
@@ -229,6 +248,26 @@ nav{
 }
 
 @media screen and (max-width:450px) {
+.box{
+    width: 20vh;
+    height: 20vh;
+    margin-top: 5vh;
+}
+
+.box i{
+    /* font-size: 15px; */
+    line-height: 170px;
+}
+
+.box span{
+  font-size: 12px;
+  padding-bottom: 0.5rem;
+}
+
+.box:hover i{
+    transform: translateY(-28px);
+}
+
 .heading-primary--main{
     font-size: 1.5rem;
 }
@@ -239,29 +278,53 @@ nav{
 }
 
 @media screen and (max-width:350px) {
-    .heading-primary--main{
-        font-size: 1.5rem;
-    }
+.heading-primary--main{
+    font-size: 1.5rem;
+}
+
+.heading-primary--sub{
+    font-size: x-small;
+}
+}
+
+@media screen and (max-width:290px) {
+.box{
+    position: relative;
+    width: 60%;
+    height: 10vh
     
-    .heading-primary--sub{
-        font-size: x-small;
-    }
-    }
+}
+
+.box i{
+    /* font-size: 15px; */
+    line-height: 5rem;
+}
+
+.box span{
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+  
+}
 
 @media screen and (max-width:200px) {
-    .heading-primary--main{
-        font-size: small;
-    }
-    .heading-primary--sub{
-        font-size: 0.5rem;
-    }
+.heading-primary--main{
+    font-size: small;
+}
+.heading-primary--sub{
+    font-size: 0.5rem;
+}
 }
 
 
-@media screen and (max-height:660px) {
+@media screen and (max-height:655px) {
+.box i{
+    font-size: 30px;
+    line-height: 140px;
+}
 
 .boxContainer{
-    height: 60%;
+    /* height: 60%; */
     padding-top: 5%;
 }
 
@@ -275,18 +338,22 @@ nav{
 }
 }
 
-@media screen and (max-height:360px) {
+@media screen and (max-height:400px) {
 .box{
     height: 5rem;
 }
 
 .boxContainer{
     padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .box i{
     line-height: 80px;
 }
+}
+
+@media screen and (max-height:360px) {
 
 .heading-primary--main{
     font-size: 0.8rem;
